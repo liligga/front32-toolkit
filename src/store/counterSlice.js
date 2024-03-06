@@ -10,10 +10,13 @@ const counterSlice = createSlice({
         // Immer - позволяет модифицировать состояние(mutate - изменение)
         increaseCounter: (state) => {
             state.value += 1
+            // return { ...state, value: state.value + 1 }
         },
         decreaseCounter: (state) => {
             state.value -= 1
         },
+        // payload - данные, которые передаются в action
+        // dispatch(increaseWithPayload(5))
         increaseWithPayload: (state, action) => {
             state.value += action.payload
         }

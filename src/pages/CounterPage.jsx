@@ -7,8 +7,8 @@ const CounterPage = () => {
   const dispatch = useDispatch();
 
   const handleIncrease = () => {
-    // dispatch(increaseCounter());
-    dispatch(increaseWithPayload(5));
+    dispatch(increaseCounter());
+    // dispatch(increaseWithPayload(5));
   };
 
   return (
